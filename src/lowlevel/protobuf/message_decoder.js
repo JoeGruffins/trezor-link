@@ -69,6 +69,7 @@ export class MessageDecoder {
 function messageToJSON(message: ProtoBuf.Builder.Message) : Object {
   const res = {};
   const meta = message.$type;
+  // console.log(meta);
 
   for (const key in message) {
     const value = message[key];

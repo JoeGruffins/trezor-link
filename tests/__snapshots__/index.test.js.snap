@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`encoding json -> protobuf message Address {"address":"some string"} 1`] = `"001e0000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message ApplyFlags {"flags":32} 1`] = `"001c000000020820"`;
+
+exports[`encoding json -> protobuf message ApplySettings {"language":"some string","label":"some string","use_passphrase":true,"homescreen":{"type":"Buffer","data":[98,117,102,102,101,114]},"passphrase_source":1,"auto_lock_delay_ms":32,"display_rotation":32} 1`] = `"00190000002a0a0b736f6d6520737472696e67120b736f6d6520737472696e6718012206627566666572280130203820"`;
+
+exports[`encoding json -> protobuf message BackupDevice {} 1`] = `"002200000000"`;
+
+exports[`encoding json -> protobuf message BinanceAddress {"address":"some string"} 1`] = `"02bd0000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message BinanceCancelMsg {"refid":"some string","sender":"some string","symbol":"some string"} 1`] = `"02c4000000270a0b736f6d6520737472696e67120b736f6d6520737472696e671a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message BinanceGetAddress {"address_n":[32],"show_display":true} 1`] = `"02bc0000000408201001"`;
+
+exports[`encoding json -> protobuf message BinanceGetPublicKey {"address_n":[32],"show_display":true} 1`] = `"02be0000000408201001"`;
+
+exports[`encoding json -> protobuf message BinanceOrderMsg {"id":"some string","ordertype":1,"price":-64,"quantity":-64,"sender":"some string","side":1,"symbol":"some string","timeinforce":1} 1`] = `"02c3000000310a0b736f6d6520737472696e671001187f207f2a0b736f6d6520737472696e6730013a0b736f6d6520737472696e674001"`;
+
+exports[`encoding json -> protobuf message BinancePublicKey {"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"02bf000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message BinanceSignTx {"address_n":[32],"msg_count":32,"account_number":-64,"chain_id":"some string","memo":"some string","sequence":-64,"source":-64} 1`] = `"02c00000002408201020187f220b736f6d6520737472696e672a0b736f6d6520737472696e67307f387f"`;
+
+exports[`encoding json -> protobuf message BinanceSignedTx {"signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"02c5000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message BinanceTransferMsg {"inputs":[{"address":"some string","coins":[{"amount":-64,"denom":"some string"}]}],"outputs":[{"address":"some string","coins":[{"amount":-64,"denom":"some string"}]}]} 1`] = `"02c2000000400a1e0a0b736f6d6520737472696e67120f087f120b736f6d6520737472696e67121e0a0b736f6d6520737472696e67120f087f120b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message BinanceTxRequest {} 1`] = `"02c100000000"`;
+
+exports[`encoding json -> protobuf message ButtonAck {} 1`] = `"001b00000000"`;
+
+exports[`encoding json -> protobuf message ButtonRequest {"code":1,"data":"some string"} 1`] = `"001a0000000f0801120b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message Cancel {} 1`] = `"001400000000"`;
+
+exports[`encoding json -> protobuf message CardanoAddress {"address":"some string"} 1`] = `"01340000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message CardanoGetAddress {"address_n":[32],"show_display":true} 1`] = `"01330000000408201001"`;
+
+exports[`encoding json -> protobuf message CardanoGetPublicKey {"address_n":[32],"show_display":true} 1`] = `"01310000000408201001"`;
+
+exports[`encoding json -> protobuf message CardanoPublicKey {"xpub":"some string","node":{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}}} 1`] = `"01320000002d0a0b736f6d6520737472696e67121e08201020182022066275666665722a066275666665723206627566666572"`;
+
+exports[`encoding json -> protobuf message CardanoSignTx {"inputs":[{"address_n":[32],"prev_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"prev_index":32,"type":32}],"outputs":[{"address":"some string","address_n":[32],"amount":64}],"transactions_count":32,"protocol_magic":32} 1`] = `"012f000000270a0e082012066275666665721820202012110a0b736f6d6520737472696e671020184018202820"`;
+
+exports[`encoding json -> protobuf message CardanoSignedTx {"tx_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_body":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0136000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message CardanoTxAck {"transaction":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0135000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message CardanoTxRequest {"tx_index":32,"tx_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_body":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"013000000012082012066275666665721a06627566666572"`;
+
+exports[`encoding json -> protobuf message ChangePin {"remove":true} 1`] = `"0004000000020801"`;
+
+exports[`encoding json -> protobuf message CipherKeyValue {"address_n":[32],"key":"some string","value":{"type":"Buffer","data":[98,117,102,102,101,114]},"encrypt":true,"ask_on_encrypt":true,"ask_on_decrypt":true,"iv":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0017000000250820120b736f6d6520737472696e671a066275666665722001280130013a06627566666572"`;
+
+exports[`encoding json -> protobuf message CipheredKeyValue {"value":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0030000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message ClearSession {} 1`] = `"001800000000"`;
+
+exports[`encoding json -> protobuf message CosiCommit {"address_n":[32],"data":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"00470000000a08201206627566666572"`;
+
+exports[`encoding json -> protobuf message CosiCommitment {"commitment":{"type":"Buffer","data":[98,117,102,102,101,114]},"pubkey":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0048000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message CosiSign {"address_n":[32],"data":{"type":"Buffer","data":[98,117,102,102,101,114]},"global_commitment":{"type":"Buffer","data":[98,117,102,102,101,114]},"global_pubkey":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"00490000001a082012066275666665721a066275666665722206627566666572"`;
+
+exports[`encoding json -> protobuf message CosiSignature {"signature":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"004a000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message DebugLinkDecision {"yes_no":true,"up_down":true,"input":"some string"} 1`] = `"006400000011080110011a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message DebugLinkFlashErase {"sector":32} 1`] = `"0071000000020820"`;
+
+exports[`encoding json -> protobuf message DebugLinkGetState {"wait_word_list":true,"wait_word_pos":true} 1`] = `"00650000000408011001"`;
+
+exports[`encoding json -> protobuf message DebugLinkLog {"level":32,"bucket":"some string","text":"some string"} 1`] = `"00680000001c0820120b736f6d6520737472696e671a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message DebugLinkMemory {"memory":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"006f000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message DebugLinkMemoryRead {"address":32,"length":32} 1`] = `"006e0000000408201020"`;
+
+exports[`encoding json -> protobuf message DebugLinkMemoryWrite {"address":32,"memory":{"type":"Buffer","data":[98,117,102,102,101,114]},"flash":true} 1`] = `"00700000000c082012066275666665721801"`;
+
+exports[`encoding json -> protobuf message DebugLinkState {"layout":{"type":"Buffer","data":[98,117,102,102,101,114]},"pin":"some string","matrix":"some string","mnemonic_secret":{"type":"Buffer","data":[98,117,102,102,101,114]},"node":{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"passphrase_protection":true,"reset_word":"some string","reset_entropy":{"type":"Buffer","data":[98,117,102,102,101,114]},"recovery_fake_word":"some string","recovery_word_pos":32,"reset_word_pos":32,"mnemonic_type":32} 1`] = `"0066000000740a06627566666572120b736f6d6520737472696e671a0b736f6d6520737472696e6722066275666665722a1e08201020182022066275666665722a06627566666572320662756666657230013a0b736f6d6520737472696e6742066275666665724a0b736f6d6520737472696e67502058206020"`;
+
+exports[`encoding json -> protobuf message DebugLinkStop {} 1`] = `"006700000000"`;
+
+exports[`encoding json -> protobuf message DebugMoneroDiagAck {"ins":64,"p1":64,"p2":64,"pd":[64],"data1":{"type":"Buffer","data":[98,117,102,102,101,114]},"data2":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"02230000001808401040184020402a066275666665723206627566666572"`;
+
+exports[`encoding json -> protobuf message DebugMoneroDiagRequest {"ins":64,"p1":64,"p2":64,"pd":[64],"data1":{"type":"Buffer","data":[98,117,102,102,101,114]},"data2":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"02220000001808401040184020402a066275666665723206627566666572"`;
+
+exports[`encoding json -> protobuf message ECDHSessionKey {"session_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"003e000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message Entropy {"entropy":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"000a000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message EntropyAck {"entropy":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0024000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message EntropyRequest {} 1`] = `"002300000000"`;
+
+exports[`encoding json -> protobuf message EosGetPublicKey {"address_n":[32],"show_display":true} 1`] = `"02580000000408201001"`;
+
+exports[`encoding json -> protobuf message EosPublicKey {"wif_public_key":"some string","raw_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0259000000150a0b736f6d6520737472696e671206627566666572"`;
+
+exports[`encoding json -> protobuf message EosSignTx {"address_n":[32],"chain_id":{"type":"Buffer","data":[98,117,102,102,101,114]},"header":{"expiration":32,"ref_block_num":32,"ref_block_prefix":32,"max_net_usage_words":32,"max_cpu_usage_ms":32,"delay_sec":32},"num_actions":32} 1`] = `"025a0000001a082012066275666665721a0c0820102018202020282030202020"`;
+
+exports[`encoding json -> protobuf message EosSignedTx {"signature":"some string"} 1`] = `"025d0000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message EosTxActionAck {"common":{"account":64,"name":64,"authorization":[{"actor":64,"permission":64}]},"transfer":{"sender":64,"receiver":64,"quantity":{"amount":-64,"symbol":64},"memo":"some string"},"delegate":{"sender":64,"receiver":64,"net_quantity":{"amount":-64,"symbol":64},"cpu_quantity":{"amount":-64,"symbol":64},"transfer":true},"undelegate":{"sender":64,"receiver":64,"net_quantity":{"amount":-64,"symbol":64},"cpu_quantity":{"amount":-64,"symbol":64}},"refund":{"owner":64},"buy_ram":{"payer":64,"receiver":64,"quantity":{"amount":-64,"symbol":64}},"buy_ram_bytes":{"payer":64,"receiver":64,"bytes":32},"sell_ram":{"account":64,"bytes":64},"vote_producer":{"voter":64,"proxy":64,"producers":[64]},"update_auth":{"account":64,"permission":64,"parent":64,"auth":{"threshold":32,"keys":[{"type":32,"key":{"type":"Buffer","data":[98,117,102,102,101,114]},"address_n":[32],"weight":32}],"accounts":[{"account":{"actor":64,"permission":64},"weight":32}],"waits":[{"wait_sec":32,"weight":32}]}},"delete_auth":{"account":64,"permission":64},"link_auth":{"account":64,"code":64,"type":64,"requirement":64},"unlink_auth":{"account":64,"code":64,"type":64},"new_account":{"creator":64,"name":64,"owner":{"threshold":32,"keys":[{"type":32,"key":{"type":"Buffer","data":[98,117,102,102,101,114]},"address_n":[32],"weight":32}],"accounts":[{"account":{"actor":64,"permission":64},"weight":32}],"waits":[{"wait_sec":32,"weight":32}]},"active":{"threshold":32,"keys":[{"type":32,"key":{"type":"Buffer","data":[98,117,102,102,101,114]},"address_n":[32],"weight":32}],"accounts":[{"account":{"actor":64,"permission":64},"weight":32}],"waits":[{"wait_sec":32,"weight":32}]}},"unknown":{"data_size":32,"data_chunk":{"type":"Buffer","data":[98,117,102,102,101,114]}}} 1`] = `"025c0000010f0a0a084010401a04084010401217084010401a04087f1040220b736f6d6520737472696e671a12084010401a04087f10402204087f104028012210084010401a04087f10402204087f10402a020840320a084010401a04087f10403a060840104018204204084010404a06084010401840522a08401040184022220820120e08201206627566666572182020201a080a040840104010202204082010205a0408401040620808401040184020406a06084010401840724c084010401a220820120e08201206627566666572182020201a080a0408401040102022040820102022220820120e08201206627566666572182020201a080a040840104010202204082010207a0a08201206627566666572"`;
+
+exports[`encoding json -> protobuf message EosTxActionRequest {"data_size":32} 1`] = `"025b000000020820"`;
+
+exports[`encoding json -> protobuf message EthereumAddress {"old_address":{"type":"Buffer","data":[98,117,102,102,101,114]},"address":"some string"} 1`] = `"0039000000150a06627566666572120b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message EthereumGetAddress {"address_n":[32],"show_display":true} 1`] = `"00380000000408201001"`;
+
+exports[`encoding json -> protobuf message EthereumGetPublicKey {"address_n":[32],"show_display":true} 1`] = `"01c20000000408201001"`;
+
+exports[`encoding json -> protobuf message EthereumMessageSignature {"signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"address":"some string"} 1`] = `"00420000001512066275666665721a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message EthereumPublicKey {"node":{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"xpub":"some string"} 1`] = `"01c30000002d0a1e08201020182022066275666665722a066275666665723206627566666572120b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message EthereumSignMessage {"address_n":[32],"message":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"00400000000a08201206627566666572"`;
+
+exports[`encoding json -> protobuf message EthereumSignTx {"address_n":[32],"nonce":{"type":"Buffer","data":[98,117,102,102,101,114]},"gas_price":{"type":"Buffer","data":[98,117,102,102,101,114]},"gas_limit":{"type":"Buffer","data":[98,117,102,102,101,114]},"to":"some string","value":{"type":"Buffer","data":[98,117,102,102,101,114]},"data_initial_chunk":{"type":"Buffer","data":[98,117,102,102,101,114]},"data_length":32,"chain_id":32,"tx_type":32} 1`] = `"003a0000003d082012066275666665721a0662756666657222066275666665725a0b736f6d6520737472696e6732066275666665723a06627566666572402048205020"`;
+
+exports[`encoding json -> protobuf message EthereumTxAck {"data_chunk":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"003c000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message EthereumTxRequest {"data_length":32,"signature_v":32,"signature_r":{"type":"Buffer","data":[98,117,102,102,101,114]},"signature_s":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"003b00000014082010201a066275666665722206627566666572"`;
+
+exports[`encoding json -> protobuf message EthereumVerifyMessage {"signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"message":{"type":"Buffer","data":[98,117,102,102,101,114]},"address":"some string"} 1`] = `"00410000001d12066275666665721a06627566666572220b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message Failure {"code":1,"message":"some string"} 1`] = `"00030000000f0801120b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message Features {"vendor":"some string","major_version":32,"minor_version":32,"patch_version":32,"bootloader_mode":true,"device_id":"some string","pin_protection":true,"passphrase_protection":true,"language":"some string","label":"some string","initialized":true,"revision":{"type":"Buffer","data":[98,117,102,102,101,114]},"bootloader_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"imported":true,"pin_cached":true,"passphrase_cached":true,"firmware_present":true,"needs_backup":true,"flags":32,"model":"some string","fw_major":32,"fw_minor":32,"fw_patch":32,"fw_vendor":"some string","fw_vendor_keys":{"type":"Buffer","data":[98,117,102,102,101,114]},"unfinished_backup":true,"no_backup":true,"recovery_mode":true,"capabilities":[1]} 1`] = `"00110000009d0a0b736f6d6520737472696e671020182020202801320b736f6d6520737472696e67380140014a0b736f6d6520737472696e67520b736f6d6520737472696e6760016a0662756666657272066275666665727801800101880101900101980101a00120aa010b736f6d6520737472696e67b00120b80120c00120ca010b736f6d6520737472696e67d20106627566666572d80101e00101e80101f00101"`;
+
+exports[`encoding json -> protobuf message FirmwareErase {"length":32} 1`] = `"0006000000020820"`;
+
+exports[`encoding json -> protobuf message FirmwareRequest {"offset":32,"length":32} 1`] = `"00080000000408201020"`;
+
+exports[`encoding json -> protobuf message FirmwareUpload {"payload":{"type":"Buffer","data":[98,117,102,102,101,114]},"hash":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0007000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message GetAddress {"address_n":[32],"coin_name":"Bitcoin","show_display":true,"multisig":{"pubkeys":[{"node":{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"address_n":[32]}],"signatures":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"m":32,"nodes":[{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}}],"address_n":[32]},"script_type":"SPENDADDRESS"} 1`] = `"001d0000006108201207426974636f696e180122500a220a1e08201020182022066275666665722a066275666665723206627566666572102012066275666665721820221e08201020182022066275666665722a06627566666572320662756666657228202800"`;
+
+exports[`encoding json -> protobuf message GetECDHSessionKey {"identity":{"proto":"some string","user":"some string","host":"some string","port":"some string","path":"some string","index":32},"peer_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"ecdsa_curve_name":"some string"} 1`] = `"003d0000005a0a430a0b736f6d6520737472696e67120b736f6d6520737472696e671a0b736f6d6520737472696e67220b736f6d6520737472696e672a0b736f6d6520737472696e67302012066275666665721a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message GetEntropy {"size":32} 1`] = `"0009000000020820"`;
+
+exports[`encoding json -> protobuf message GetFeatures {} 1`] = `"003700000000"`;
+
+exports[`encoding json -> protobuf message GetPublicKey {"address_n":[32],"ecdsa_curve_name":"some string","show_display":true,"coin_name":"Bitcoin","script_type":"SPENDADDRESS"} 1`] = `"000b0000001c0820120b736f6d6520737472696e6718012207426974636f696e2800"`;
+
+exports[`encoding json -> protobuf message Initialize {"state":{"type":"Buffer","data":[98,117,102,102,101,114]},"skip_passphrase":true} 1`] = `"00000000000a0a066275666665721001"`;
+
+exports[`encoding json -> protobuf message LiskAddress {"address":"some string"} 1`] = `"00730000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message LiskGetAddress {"address_n":[32],"show_display":true} 1`] = `"00720000000408201001"`;
+
+exports[`encoding json -> protobuf message LiskGetPublicKey {"address_n":[32],"show_display":true} 1`] = `"00790000000408201001"`;
+
+exports[`encoding json -> protobuf message LiskMessageSignature {"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"signature":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0077000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message LiskPublicKey {"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"007a000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message LiskSignMessage {"address_n":[32],"message":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"00760000000a08201206627566666572"`;
+
+exports[`encoding json -> protobuf message LiskSignTx {"address_n":[32],"transaction":{"type":1,"amount":64,"fee":64,"recipient_id":"some string","sender_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"requester_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"timestamp":32,"asset":{"signature":{"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"delegate":{"username":"some string"},"votes":["some string"],"multisignature":{"min":32,"life_time":32,"keys_group":["some string"]},"data":"some string"}}} 1`] = `"00740000007908201275080110401840220b736f6d6520737472696e672a0662756666657232066275666665723a0662756666657240204a460a080a06627566666572120d0a0b736f6d6520737472696e671a0b736f6d6520737472696e672211082010201a0b736f6d6520737472696e672a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message LiskSignedTx {"signature":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0075000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message LiskVerifyMessage {"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"message":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0078000000180a0662756666657212066275666665721a06627566666572"`;
+
+exports[`encoding json -> protobuf message LoadDevice {"mnemonics":["some string"],"node":{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"pin":"some string","passphrase_protection":true,"language":"english","label":"some string","skip_checksum":true,"u2f_counter":32} 1`] = `"000d000000560a0b736f6d6520737472696e67121e08201020182022066275666665722a0662756666657232066275666665721a0b736f6d6520737472696e6720012a07656e676c697368320b736f6d6520737472696e6738014020"`;
+
+exports[`encoding json -> protobuf message MessageSignature {"address":"some string","signature":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0028000000150a0b736f6d6520737472696e671206627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroAddress {"address":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"021d000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroGetAddress {"address_n":[32],"show_display":true,"network_type":32,"account":32,"minor":32,"payment_id":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"021c00000012082010011820202028203206627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroGetTxKeyAck {"salt":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_keys":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_derivations":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0227000000180a0662756666657212066275666665721a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroGetTxKeyRequest {"address_n":[32],"network_type":32,"salt1":{"type":"Buffer","data":[98,117,102,102,101,114]},"salt2":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_enc_keys":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_prefix_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"reason":32,"view_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"02260000002e082010201a0662756666657222066275666665722a06627566666572320662756666657238204206627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroGetWatchKey {"address_n":[32],"network_type":32} 1`] = `"021e0000000408201020"`;
+
+exports[`encoding json -> protobuf message MoneroKeyImageExportInitAck {} 1`] = `"021300000000"`;
+
+exports[`encoding json -> protobuf message MoneroKeyImageExportInitRequest {"num":64,"hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"address_n":[32],"network_type":32,"subs":[{"account":32,"minor_indices":[32]}]} 1`] = `"02120000001408401206627566666572182020202a0408201020"`;
+
+exports[`encoding json -> protobuf message MoneroKeyImageSyncFinalAck {"enc_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0217000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroKeyImageSyncFinalRequest {} 1`] = `"021600000000"`;
+
+exports[`encoding json -> protobuf message MoneroKeyImageSyncStepAck {"kis":[{"iv":{"type":"Buffer","data":[98,117,102,102,101,114]},"blob":{"type":"Buffer","data":[98,117,102,102,101,114]}}]} 1`] = `"0215000000120a100a066275666665721a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroKeyImageSyncStepRequest {"tdis":[{"out_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_pub_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"additional_tx_pub_keys":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"internal_output_index":64}]} 1`] = `"02140000001c0a1a0a0662756666657212066275666665721a066275666665722040"`;
+
+exports[`encoding json -> protobuf message MoneroLiveRefreshFinalAck {} 1`] = `"022d00000000"`;
+
+exports[`encoding json -> protobuf message MoneroLiveRefreshFinalRequest {} 1`] = `"022c00000000"`;
+
+exports[`encoding json -> protobuf message MoneroLiveRefreshStartAck {} 1`] = `"022900000000"`;
+
+exports[`encoding json -> protobuf message MoneroLiveRefreshStartRequest {"address_n":[32],"network_type":32} 1`] = `"02280000000408201020"`;
+
+exports[`encoding json -> protobuf message MoneroLiveRefreshStepAck {"salt":{"type":"Buffer","data":[98,117,102,102,101,114]},"key_image":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"022b000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroLiveRefreshStepRequest {"out_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"recv_deriv":{"type":"Buffer","data":[98,117,102,102,101,114]},"real_out_idx":64,"sub_addr_major":32,"sub_addr_minor":32} 1`] = `"022a000000160a066275666665721206627566666572184020202820"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionAllInputsSetAck {"rsig_data":{"rsig_type":32,"offload_type":32,"grouping":[64],"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig_parts":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"bp_version":32}} 1`] = `"01fe000000220a2008201020184022066275666665722a0662756666657232066275666665723820"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionAllInputsSetRequest {} 1`] = `"01fd00000000"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionAllOutSetAck {"extra":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_prefix_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"rv":{"txn_fee":64,"message":{"type":"Buffer","data":[98,117,102,102,101,114]},"rv_type":32},"full_message_hash":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0202000000260a066275666665721206627566666572220c0840120662756666657218202a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionAllOutSetRequest {"rsig_data":{"rsig_type":32,"offload_type":32,"grouping":[64],"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig_parts":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"bp_version":32}} 1`] = `"0201000000220a2008201020184022066275666665722a0662756666657232066275666665723820"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionFinalAck {"cout_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"salt":{"type":"Buffer","data":[98,117,102,102,101,114]},"rand_mult":{"type":"Buffer","data":[98,117,102,102,101,114]},"tx_enc_keys":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0206000000200a0662756666657212066275666665721a066275666665722206627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionFinalRequest {} 1`] = `"020500000000"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionInitAck {"hmacs":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"rsig_data":{"rsig_type":32,"offload_type":32,"grouping":[64],"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig_parts":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"bp_version":32}} 1`] = `"01f60000002a0a06627566666572122008201020184022066275666665722a0662756666657232066275666665723820"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionInitRequest {"version":32,"address_n":[32],"network_type":32,"tsx_data":{"version":32,"payment_id":{"type":"Buffer","data":[98,117,102,102,101,114]},"unlock_time":64,"outputs":[{"amount":64,"addr":{"spend_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"view_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"is_subaddress":true,"original":{"type":"Buffer","data":[98,117,102,102,101,114]},"is_integrated":true}],"change_dts":{"amount":64,"addr":{"spend_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"view_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"is_subaddress":true,"original":{"type":"Buffer","data":[98,117,102,102,101,114]},"is_integrated":true},"num_inputs":32,"mixin":32,"fee":64,"account":32,"minor_indices":[32],"rsig_data":{"rsig_type":32,"offload_type":32,"grouping":[64],"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig_parts":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"bp_version":32},"integrated_indices":[32],"client_version":32,"hard_fork":32,"monero_version":{"type":"Buffer","data":[98,117,102,102,101,114]}}} 1`] = `"01f500000093082010201820228a010820120662756666657218402220084012100a0662756666657212066275666665721801220662756666657228012a20084012100a066275666665721206627566666572180122066275666665722801302038204040482050205a2008201020184022066275666665722a06627566666572320662756666657238206020682070207a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionInputViniAck {} 1`] = `"01fc00000000"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionInputViniRequest {"src_entr":{"outputs":[{"idx":64,"key":{"dest":{"type":"Buffer","data":[98,117,102,102,101,114]},"commitment":{"type":"Buffer","data":[98,117,102,102,101,114]}}}],"real_output":64,"real_out_tx_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"real_out_additional_tx_keys":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"real_output_in_tx_index":64,"amount":64,"rct":true,"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"multisig_kLRki":{"K":{"type":"Buffer","data":[98,117,102,102,101,114]},"L":{"type":"Buffer","data":[98,117,102,102,101,114]},"R":{"type":"Buffer","data":[98,117,102,102,101,114]},"ki":{"type":"Buffer","data":[98,117,102,102,101,114]}}},"vini":{"type":"Buffer","data":[98,117,102,102,101,114]},"vini_hmac":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out_hmac":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"01fb0000007a0a580a14084012100a06627566666572120662756666657210401a06627566666572220662756666657228403040380142066275666665724a200a0662756666657212066275666665721a06627566666572220662756666657212066275666665721a0662756666657222066275666665722a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionInputsPermutationAck {} 1`] = `"01fa00000000"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionInputsPermutationRequest {"perm":[32]} 1`] = `"01f9000000020820"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionSetInputAck {"vini":{"type":"Buffer","data":[98,117,102,102,101,114]},"vini_hmac":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out_hmac":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out_alpha":{"type":"Buffer","data":[98,117,102,102,101,114]},"spend_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"01f8000000300a0662756666657212066275666665721a0662756666657222066275666665722a066275666665723206627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionSetInputRequest {"src_entr":{"outputs":[{"idx":64,"key":{"dest":{"type":"Buffer","data":[98,117,102,102,101,114]},"commitment":{"type":"Buffer","data":[98,117,102,102,101,114]}}}],"real_output":64,"real_out_tx_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"real_out_additional_tx_keys":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"real_output_in_tx_index":64,"amount":64,"rct":true,"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"multisig_kLRki":{"K":{"type":"Buffer","data":[98,117,102,102,101,114]},"L":{"type":"Buffer","data":[98,117,102,102,101,114]},"R":{"type":"Buffer","data":[98,117,102,102,101,114]},"ki":{"type":"Buffer","data":[98,117,102,102,101,114]}}}} 1`] = `"01f70000005a0a580a14084012100a06627566666572120662756666657210401a06627566666572220662756666657228403040380142066275666665724a200a0662756666657212066275666665721a066275666665722206627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionSetOutputAck {"tx_out":{"type":"Buffer","data":[98,117,102,102,101,114]},"vouti_hmac":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig_data":{"rsig_type":32,"offload_type":32,"grouping":[64],"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig_parts":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"bp_version":32},"out_pk":{"type":"Buffer","data":[98,117,102,102,101,114]},"ecdh_info":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0200000000420a0662756666657212066275666665721a2008201020184022066275666665722a066275666665723206627566666572382022066275666665722a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionSetOutputRequest {"dst_entr":{"amount":64,"addr":{"spend_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"view_public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"is_subaddress":true,"original":{"type":"Buffer","data":[98,117,102,102,101,114]},"is_integrated":true},"dst_entr_hmac":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig_data":{"rsig_type":32,"offload_type":32,"grouping":[64],"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig":{"type":"Buffer","data":[98,117,102,102,101,114]},"rsig_parts":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"bp_version":32},"is_offloaded_bp":true} 1`] = `"01ff0000004e0a20084012100a06627566666572120662756666657218012206627566666572280112066275666665721a2008201020184022066275666665722a06627566666572320662756666657238202001"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionSignInputAck {"signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0204000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroTransactionSignInputRequest {"src_entr":{"outputs":[{"idx":64,"key":{"dest":{"type":"Buffer","data":[98,117,102,102,101,114]},"commitment":{"type":"Buffer","data":[98,117,102,102,101,114]}}}],"real_output":64,"real_out_tx_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"real_out_additional_tx_keys":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"real_output_in_tx_index":64,"amount":64,"rct":true,"mask":{"type":"Buffer","data":[98,117,102,102,101,114]},"multisig_kLRki":{"K":{"type":"Buffer","data":[98,117,102,102,101,114]},"L":{"type":"Buffer","data":[98,117,102,102,101,114]},"R":{"type":"Buffer","data":[98,117,102,102,101,114]},"ki":{"type":"Buffer","data":[98,117,102,102,101,114]}}},"vini":{"type":"Buffer","data":[98,117,102,102,101,114]},"vini_hmac":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out_hmac":{"type":"Buffer","data":[98,117,102,102,101,114]},"pseudo_out_alpha":{"type":"Buffer","data":[98,117,102,102,101,114]},"spend_key":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"02030000008a0a580a14084012100a06627566666572120662756666657210401a06627566666572220662756666657228403040380142066275666665724a200a0662756666657212066275666665721a06627566666572220662756666657212066275666665721a0662756666657222066275666665722a0662756666657232066275666665723a06627566666572"`;
+
+exports[`encoding json -> protobuf message MoneroWatchKey {"watch_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"address":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"021f000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message NEMAddress {"address":"some string"} 1`] = `"00440000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message NEMDecryptMessage {"address_n":[32],"network":32,"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"payload":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"004b00000014082010201a066275666665722206627566666572"`;
+
+exports[`encoding json -> protobuf message NEMDecryptedMessage {"payload":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"004c000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message NEMGetAddress {"address_n":[32],"network":32,"show_display":true} 1`] = `"004300000006082010201801"`;
+
+exports[`encoding json -> protobuf message NEMSignTx {"transaction":{"address_n":[32],"network":32,"timestamp":32,"fee":64,"deadline":32,"signer":{"type":"Buffer","data":[98,117,102,102,101,114]}},"multisig":{"address_n":[32],"network":32,"timestamp":32,"fee":64,"deadline":32,"signer":{"type":"Buffer","data":[98,117,102,102,101,114]}},"transfer":{"recipient":"some string","amount":64,"payload":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"mosaics":[{"namespace":"some string","mosaic":"some string","quantity":64}]},"cosigning":true,"provision_namespace":{"namespace":"some string","parent":"some string","sink":"some string","fee":64},"mosaic_creation":{"definition":{"name":"some string","ticker":"some string","namespace":"some string","mosaic":"some string","divisibility":32,"levy":1,"fee":64,"levy_address":"some string","levy_namespace":"some string","levy_mosaic":"some string","supply":64,"mutable_supply":true,"transferable":true,"description":"some string","networks":[32]},"sink":"some string","fee":64},"supply_change":{"namespace":"some string","mosaic":"some string","type":1,"delta":64},"aggregate_modification":{"modifications":[{"type":1,"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}}],"relative_change":-32},"importance_transfer":{"mode":1,"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}}} 1`] = `"00450000015a0a1208201020182020402820320662756666657212120820102018202040282032066275666665721a3d0a0b736f6d6520737472696e6710401a0662756666657222066275666665722a1c0a0b736f6d6520737472696e67120b736f6d6520737472696e67184020012a290a0b736f6d6520737472696e67120b736f6d6520737472696e671a0b736f6d6520737472696e6720403287010a760a0b736f6d6520737472696e67120b736f6d6520737472696e671a0b736f6d6520737472696e67220b736f6d6520737472696e67282030013840420b736f6d6520737472696e674a0b736f6d6520737472696e67520b736f6d6520737472696e67584060016801720b736f6d6520737472696e677820120b736f6d6520737472696e6718403a1e0a0b736f6d6520737472696e67120b736f6d6520737472696e6718012040420e0a0a08011206627566666572103f4a0a08011206627566666572"`;
+
+exports[`encoding json -> protobuf message NEMSignedTx {"data":{"type":"Buffer","data":[98,117,102,102,101,114]},"signature":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0046000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message PassphraseAck {"passphrase":"some string","state":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"002a000000150a0b736f6d6520737472696e671206627566666572"`;
+
+exports[`encoding json -> protobuf message PassphraseRequest {"on_device":true} 1`] = `"0029000000020801"`;
+
+exports[`encoding json -> protobuf message PassphraseStateAck {} 1`] = `"004e00000000"`;
+
+exports[`encoding json -> protobuf message PassphraseStateRequest {"state":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"004d000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message PinMatrixAck {"pin":"some string"} 1`] = `"00130000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message PinMatrixRequest {"type":1} 1`] = `"0012000000020801"`;
+
+exports[`encoding json -> protobuf message Ping {"message":"some string","button_protection":true,"pin_protection":true,"passphrase_protection":true} 1`] = `"0001000000130a0b736f6d6520737472696e67100118012001"`;
+
+exports[`encoding json -> protobuf message PublicKey {"node":{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"xpub":"some string"} 1`] = `"000c0000002d0a1e08201020182022066275666665722a066275666665723206627566666572120b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message RecoveryDevice {"word_count":32,"passphrase_protection":true,"pin_protection":true,"language":"english","label":"some string","enforce_wordlist":true,"type":1,"u2f_counter":32,"dry_run":true} 1`] = `"002d000000240820100118012207656e676c6973682a0b736f6d6520737472696e673001400148205001"`;
+
+exports[`encoding json -> protobuf message ResetDevice {"display_random":true,"strength":256,"passphrase_protection":true,"pin_protection":true,"language":"english","label":"some string","u2f_counter":32,"skip_backup":true,"no_backup":true,"backup_type":"ResetDeviceBackupType_Bip39"} 1`] = `"000e000000270801108002180120012a07656e676c697368320b736f6d6520737472696e673820400148015000"`;
+
+exports[`encoding json -> protobuf message RippleAddress {"address":"some string"} 1`] = `"01910000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message RippleGetAddress {"address_n":[32],"show_display":true} 1`] = `"01900000000408201001"`;
+
+exports[`encoding json -> protobuf message RippleSignTx {"address_n":[32],"fee":64,"flags":32,"sequence":32,"last_ledger_sequence":32,"payment":{"amount":64,"destination":"some string","destination_tag":32}} 1`] = `"01920000001d0820104018202020282032110840120b736f6d6520737472696e671820"`;
+
+exports[`encoding json -> protobuf message RippleSignedTx {"signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"serialized_tx":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0193000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message SelfTest {"payload":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"0020000000080a06627566666572"`;
+
+exports[`encoding json -> protobuf message SetU2FCounter {"u2f_counter":32} 1`] = `"003f000000020820"`;
+
+exports[`encoding json -> protobuf message SignIdentity {"identity":{"proto":"some string","user":"some string","host":"some string","port":"some string","path":"some string","index":32},"challenge_hidden":{"type":"Buffer","data":[98,117,102,102,101,114]},"challenge_visual":"some string","ecdsa_curve_name":"some string"} 1`] = `"0035000000670a430a0b736f6d6520737472696e67120b736f6d6520737472696e671a0b736f6d6520737472696e67220b736f6d6520737472696e672a0b736f6d6520737472696e67302012066275666665721a0b736f6d6520737472696e67220b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message SignMessage {"address_n":[32],"message":{"type":"Buffer","data":[98,117,102,102,101,114]},"coin_name":"Bitcoin","script_type":"SPENDADDRESS"} 1`] = `"002600000015082012066275666665721a07426974636f696e2000"`;
+
+exports[`encoding json -> protobuf message SignTx {"outputs_count":32,"inputs_count":32,"coin_name":"Bitcoin","version":1,"lock_time":32,"expiry":32,"overwintered":true,"version_group_id":32,"timestamp":32,"branch_id":32} 1`] = `"000f0000001b082010201a07426974636f696e2001282030203801402048205020"`;
+
+exports[`encoding json -> protobuf message SignedIdentity {"address":"some string","public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"signature":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"00360000001d0a0b736f6d6520737472696e6712066275666665721a06627566666572"`;
+
+exports[`encoding json -> protobuf message StellarAccountMergeOp {"source_account":"some string","destination_account":"some string"} 1`] = `"00da0000001a0a0b736f6d6520737472696e67120b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message StellarAddress {"address":"some string"} 1`] = `"00d00000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message StellarAllowTrustOp {"source_account":"some string","trusted_account":"some string","asset_type":32,"asset_code":"some string","is_authorized":32} 1`] = `"00d90000002b0a0b736f6d6520737472696e67120b736f6d6520737472696e671820220b736f6d6520737472696e672820"`;
+
+exports[`encoding json -> protobuf message StellarBumpSequenceOp {"source_account":"some string","bump_to":64} 1`] = `"00dd0000000f0a0b736f6d6520737472696e671040"`;
+
+exports[`encoding json -> protobuf message StellarChangeTrustOp {"source_account":"some string","asset":{"type":32,"code":"some string","issuer":"some string"},"limit":64} 1`] = `"00d80000002d0a0b736f6d6520737472696e67121c0820120b736f6d6520737472696e671a0b736f6d6520737472696e671840"`;
+
+exports[`encoding json -> protobuf message StellarCreateAccountOp {"source_account":"some string","new_account":"some string","starting_balance":-64} 1`] = `"00d20000001c0a0b736f6d6520737472696e67120b736f6d6520737472696e67187f"`;
+
+exports[`encoding json -> protobuf message StellarCreatePassiveOfferOp {"source_account":"some string","selling_asset":{"type":32,"code":"some string","issuer":"some string"},"buying_asset":{"type":32,"code":"some string","issuer":"some string"},"amount":-64,"price_n":32,"price_d":32} 1`] = `"00d60000004f0a0b736f6d6520737472696e67121c0820120b736f6d6520737472696e671a0b736f6d6520737472696e671a1c0820120b736f6d6520737472696e671a0b736f6d6520737472696e67207f28203020"`;
+
+exports[`encoding json -> protobuf message StellarGetAddress {"address_n":[32],"show_display":true} 1`] = `"00cf0000000408201001"`;
+
+exports[`encoding json -> protobuf message StellarManageDataOp {"source_account":"some string","key":"some string","value":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"00dc000000220a0b736f6d6520737472696e67120b736f6d6520737472696e671a06627566666572"`;
+
+exports[`encoding json -> protobuf message StellarManageOfferOp {"source_account":"some string","selling_asset":{"type":32,"code":"some string","issuer":"some string"},"buying_asset":{"type":32,"code":"some string","issuer":"some string"},"amount":-64,"price_n":32,"price_d":32,"offer_id":64} 1`] = `"00d5000000510a0b736f6d6520737472696e67121c0820120b736f6d6520737472696e671a0b736f6d6520737472696e671a1c0820120b736f6d6520737472696e671a0b736f6d6520737472696e67207f282030203840"`;
+
+exports[`encoding json -> protobuf message StellarPathPaymentOp {"source_account":"some string","send_asset":{"type":32,"code":"some string","issuer":"some string"},"send_max":-64,"destination_account":"some string","destination_asset":{"type":32,"code":"some string","issuer":"some string"},"destination_amount":-64,"paths":[{"type":32,"code":"some string","issuer":"some string"}]} 1`] = `"00d4000000780a0b736f6d6520737472696e67121c0820120b736f6d6520737472696e671a0b736f6d6520737472696e67187f220b736f6d6520737472696e672a1c0820120b736f6d6520737472696e671a0b736f6d6520737472696e67307f3a1c0820120b736f6d6520737472696e671a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message StellarPaymentOp {"source_account":"some string","destination_account":"some string","asset":{"type":32,"code":"some string","issuer":"some string"},"amount":-64} 1`] = `"00d30000003a0a0b736f6d6520737472696e67120b736f6d6520737472696e671a1c0820120b736f6d6520737472696e671a0b736f6d6520737472696e67207f"`;
+
+exports[`encoding json -> protobuf message StellarSetOptionsOp {"source_account":"some string","inflation_destination_account":"some string","clear_flags":32,"set_flags":32,"master_weight":32,"low_threshold":32,"medium_threshold":32,"high_threshold":32,"home_domain":"some string","signer_type":32,"signer_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"signer_weight":32} 1`] = `"00d70000003f0a0b736f6d6520737472696e67120b736f6d6520737472696e671820202028203020382040204a0b736f6d6520737472696e6750205a066275666665726020"`;
+
+exports[`encoding json -> protobuf message StellarSignTx {"address_n":[32],"network_passphrase":"some string","source_account":"some string","fee":32,"sequence_number":64,"timebounds_start":32,"timebounds_end":32,"memo_type":32,"memo_text":"some string","memo_id":64,"memo_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"num_operations":32} 1`] = `"00ca0000003f10201a0b736f6d6520737472696e67220b736f6d6520737472696e67282030404020482050205a0b736f6d6520737472696e6760406a066275666665727020"`;
+
+exports[`encoding json -> protobuf message StellarSignedTx {"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"signature":{"type":"Buffer","data":[98,117,102,102,101,114]}} 1`] = `"00e6000000100a066275666665721206627566666572"`;
+
+exports[`encoding json -> protobuf message StellarTxOpRequest {} 1`] = `"00cb00000000"`;
+
+exports[`encoding json -> protobuf message Success {"message":"some string"} 1`] = `"00020000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message TezosAddress {"address":"some string"} 1`] = `"00970000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message TezosGetAddress {"address_n":[32],"show_display":true} 1`] = `"00960000000408201001"`;
+
+exports[`encoding json -> protobuf message TezosGetPublicKey {"address_n":[32],"show_display":true} 1`] = `"009a0000000408201001"`;
+
+exports[`encoding json -> protobuf message TezosPublicKey {"public_key":"some string"} 1`] = `"009b0000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message TezosSignTx {"address_n":[32],"branch":{"type":"Buffer","data":[98,117,102,102,101,114]},"reveal":{"source":{"tag":1,"hash":{"type":"Buffer","data":[98,117,102,102,101,114]}},"fee":64,"counter":64,"gas_limit":64,"storage_limit":64,"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"transaction":{"source":{"tag":1,"hash":{"type":"Buffer","data":[98,117,102,102,101,114]}},"fee":64,"counter":64,"gas_limit":64,"storage_limit":64,"amount":64,"destination":{"tag":1,"hash":{"type":"Buffer","data":[98,117,102,102,101,114]}},"parameters":{"type":"Buffer","data":[98,117,102,102,101,114]}},"origination":{"source":{"tag":1,"hash":{"type":"Buffer","data":[98,117,102,102,101,114]}},"fee":64,"counter":64,"gas_limit":64,"storage_limit":64,"manager_pubkey":{"type":"Buffer","data":[98,117,102,102,101,114]},"balance":64,"spendable":true,"delegatable":true,"delegate":{"type":"Buffer","data":[98,117,102,102,101,114]},"script":{"type":"Buffer","data":[98,117,102,102,101,114]}},"delegation":{"source":{"tag":1,"hash":{"type":"Buffer","data":[98,117,102,102,101,114]}},"fee":64,"counter":64,"gas_limit":64,"storage_limit":64,"delegate":{"type":"Buffer","data":[98,117,102,102,101,114]}},"proposal":{"source":{"type":"Buffer","data":[98,117,102,102,101,114]},"period":64,"proposals":[{"type":"Buffer","data":[98,117,102,102,101,114]}]},"ballot":{"source":{"type":"Buffer","data":[98,117,102,102,101,114]},"period":64,"proposal":{"type":"Buffer","data":[98,117,102,102,101,114]},"ballot":1}} 1`] = `"0098000000d0082012066275666665721a1c0a0a0801120662756666657210401840204028403206627566666572222a0a0a08011206627566666572104018402040284030403a0a0801120662756666657242066275666665722a320a0a080112066275666665721040184020402840320662756666657238404001480152066275666665725a06627566666572321c0a0a08011206627566666572104018402040284032066275666665723a120a066275666665721040220662756666657242140a0662756666657210401a066275666665722001"`;
+
+exports[`encoding json -> protobuf message TezosSignedTx {"signature":"some string","sig_op_contents":{"type":"Buffer","data":[98,117,102,102,101,114]},"operation_hash":"some string"} 1`] = `"0099000000220a0b736f6d6520737472696e6712066275666665721a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message TxAck {"tx":{"version":32,"inputs":[{"address_n":[32],"prev_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"prev_index":32,"script_sig":{"type":"Buffer","data":[98,117,102,102,101,114]},"sequence":4294967295,"script_type":"SPENDADDRESS","multisig":{"pubkeys":[{"node":{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"address_n":[32]}],"signatures":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"m":32,"nodes":[{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}}],"address_n":[32]},"amount":64,"decred_tree":32,"decred_script_version":32,"prev_block_hash_bip115":{"type":"Buffer","data":[98,117,102,102,101,114]},"prev_block_height_bip115":32}],"bin_outputs":[{"amount":64,"script_pubkey":{"type":"Buffer","data":[98,117,102,102,101,114]},"decred_script_version":32}],"lock_time":32,"outputs":[{"address":"some string","address_n":[32],"amount":64,"script_type":1,"multisig":{"pubkeys":[{"node":{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}},"address_n":[32]}],"signatures":[{"type":"Buffer","data":[98,117,102,102,101,114]}],"m":32,"nodes":[{"depth":32,"fingerprint":32,"child_num":32,"chain_code":{"type":"Buffer","data":[98,117,102,102,101,114]},"private_key":{"type":"Buffer","data":[98,117,102,102,101,114]},"public_key":{"type":"Buffer","data":[98,117,102,102,101,114]}}],"address_n":[32]},"op_return_data":{"type":"Buffer","data":[98,117,102,102,101,114]},"decred_script_version":32,"block_hash_bip115":{"type":"Buffer","data":[98,117,102,102,101,114]},"block_height_bip115":32}],"inputs_cnt":32,"outputs_cnt":32,"extra_data":{"type":"Buffer","data":[98,117,102,102,101,114]},"extra_data_len":32,"expiry":32,"overwintered":true,"version_group_id":32,"timestamp":32,"branch_id":32}} 1`] = `"0016000001280aa5020820127e082012066275666665721820220662756666657228ffffffff0f30003a500a220a1e08201020182022066275666665722a066275666665723206627566666572102012066275666665721820221e08201020182022066275666665722a06627566666572320662756666657228204040482050205a0662756666657260201a0c08401206627566666572182020202a790a0b736f6d6520737472696e671020184020012a500a220a1e08201020182022066275666665722a066275666665723206627566666572102012066275666665721820221e08201020182022066275666665722a06627566666572320662756666657228203206627566666572382042066275666665724820302038204206627566666572482050205801602068207020"`;
+
+exports[`encoding json -> protobuf message TxRequest {"request_type":1,"details":{"request_index":32,"tx_hash":{"type":"Buffer","data":[98,117,102,102,101,114]},"extra_data_len":32,"extra_data_offset":32},"serialized":{"signature_index":32,"signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"serialized_tx":{"type":"Buffer","data":[98,117,102,102,101,114]}}} 1`] = `"0015000000260801120e08201206627566666572182020201a12082012066275666665721a06627566666572"`;
+
+exports[`encoding json -> protobuf message VerifyMessage {"address":"some string","signature":{"type":"Buffer","data":[98,117,102,102,101,114]},"message":{"type":"Buffer","data":[98,117,102,102,101,114]},"coin_name":"Bitcoin"} 1`] = `"0027000000260a0b736f6d6520737472696e6712066275666665721a066275666665722207426974636f696e"`;
+
+exports[`encoding json -> protobuf message WipeDevice {} 1`] = `"000500000000"`;
+
+exports[`encoding json -> protobuf message WordAck {"word":"some string"} 1`] = `"002f0000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message WordRequest {"type":1} 1`] = `"002e000000020801"`;
