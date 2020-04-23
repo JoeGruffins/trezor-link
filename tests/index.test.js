@@ -1,6 +1,10 @@
 const parseConfigure = require('../src/lowlevel/protobuf/parse_protocol').parseConfigure
 const buildOne = require('../src/lowlevel/send').buildOne;
 const receiveOne = require('../src/lowlevel/receive').receiveOne;
+const patch = require('../src/lowlevel/protobuf/monkey_patch').patch;
+
+patch();
+
 const messages = require('./__fixtures__/messages.json');
 const fixtures = require('./__fixtures__/messages');
 
@@ -40,7 +44,6 @@ describe('encoding json -> protobuf', () => {
         .filter(f => !failing.includes(f.name))
         .forEach(f => {
             test(`message ${f.name} ${JSON.stringify(f.params)}`, () => {
-
                 expect(() => {
                     buildOne(parsedMessages, f.name, f.params)
                 }).not.toThrow();
@@ -50,9 +53,8 @@ describe('encoding json -> protobuf', () => {
                 expect(encodedMessage.toString('hex')).toMatchSnapshot();
                 // then decode message and check, whether decoded message matches original json
                 const decodedMessage = receiveOne(parsedMessages, encodedMessage);
-                // console.log(decodedMessage);
-                // expect(decodedMessage.type).toEqual(f.name);
-                // expect(decodedMessage.message).toEqual(f.params);
+                expect(decodedMessage.type).toEqual(f.name);
+                expect(decodedMessage.message).toEqual(f.params);
             });
         })
 })

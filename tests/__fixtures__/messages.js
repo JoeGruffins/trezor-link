@@ -2,15 +2,16 @@ const messages = require('./messages.json');
 
 const findInEnums = (type, enums) => {
     if (!enums) return;
-    return enums.find(en => {
+    const found = enums.find(en => {
         return en.name === type;
     });
+    if (found) {
+        return found.values[0].name;
+    }
 }
 
 const findEnumType = (type, message, messages) => {
-    if (findInEnums(type, message.enums) || findInEnums(type, messages.enums)) {
-        return 1;
-    }
+    return findInEnums(type, message.enums) || findInEnums(type, messages.enums);
 }
 
 const findKeyValueRecursive = (data, key, value) => {
@@ -60,7 +61,7 @@ const getValueForField = (field) => {
             value = -64;
             break;
         case 'bytes':
-            value = Buffer.from([0x62, 0x75, 0x66, 0x66, 0x65, 0x72]); 
+            value = '851fc9542342321af63ecbba7d3ece545f2a42bad01ba32cff5535b18e54b6d3106e10b6a4525993d185a1443d9a125186960e028eabfdd8d76cf70a3a7e3100';
             break;
     }
     return value;
@@ -70,22 +71,30 @@ const buildParams = (message) => {
     const params = {};
     // then it is nested enum
     if (message.values) {
-        return 1;
+        return message.values[0].name
     }
     message.fields.forEach(field => {
         let value = getValueForField(field); 
+        let en;
         if (!value) {
             const complex = findComplexType(field.type, messages);
             if (complex) {
                 value = buildParams(complex)
             }
-            const en = findEnumType(field.type, message, messages);
+            en = findEnumType(field.type, message, messages);
             if (en) {
                 value = en;
             }
         }
         if (value) {
             if (field.rule === 'repeated') {
+                if (en) {
+                    // crazy crazy crazy. encoding enum as number generaly works
+                    // but behaviour of decoding differs wheter it is in array or not. 
+                    // if in array it would decode to number
+                    // if not in array it would decode to string label like Bitcoin_Capability
+                    return params[field.name] = [1];
+                }
                 return params[field.name] = [ value ];
             }
             return params[field.name] = value ;
@@ -133,7 +142,6 @@ const buildFixtures = (messages) => {
 
             } catch (err) {
                 console.log(err);
-                process.exit(1);
                 return
             }
     });
