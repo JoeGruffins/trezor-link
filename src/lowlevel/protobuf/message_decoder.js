@@ -69,7 +69,6 @@ export class MessageDecoder {
 function messageToJSON(message: ProtoBuf.Builder.Message) : Object {
   const res = {};
   const meta = message.$type;
-  // console.log(meta);
 
   for (const key in message) {
     const value = message[key];
@@ -83,6 +82,18 @@ function messageToJSON(message: ProtoBuf.Builder.Message) : Object {
       res[key] = num;
     } else if (Array.isArray(value)) {
       const decodedArr = value.map((i) => {
+        // was not handled, for example MultisigRedeemScriptType has this:
+        //   {
+        //     "rule": "repeated",
+        //     "options": {},
+        //     "type": "bytes",
+        //     "name": "signatures",
+        //     "id": 2
+        // },
+        // interesting is that connect sends it as string[] ??
+        // if (i instanceof ByteBuffer) {
+        //   return i.toHex();
+        // }
         if (typeof i === `object`) {
           return messageToJSON(i);
         } else {

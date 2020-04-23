@@ -13,7 +13,9 @@ env:
   - GOAL=eslint
   - GOAL=build
 
-script: make $GOAL
+script: 
+  - yarn test
+  - make $GOAL
 
 notifications:
   webhooks:

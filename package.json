@@ -6,7 +6,7 @@
   "scripts": {
     "build": "make build",
     "check": "make check",
-    "test": "jest --updateSnapshot"
+    "test": "jest"
   },
   "repository": "https://github.com/trezor/trezor-link.git",
   "author": "Karel Bílek <kb@karelbilek.com>",
