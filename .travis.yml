@@ -11,10 +11,10 @@ before_script:
 env:
   - GOAL=flow
   - GOAL=eslint
+  - GOAL=test
   - GOAL=build
 
 script: 
-  - yarn test
   - make $GOAL
 
 notifications:
