@@ -119,10 +119,10 @@ const buildFixtures = (messages) => {
     messages.messages
         .filter(m => messageNames.includes(m.name))
         .forEach(message => {
-        // not really sure what it is. skip it but research later
-            if (message.ref === 'google.protobuf.EnumValueOptions') {
+            if (!message.name) {
                 return;
             }
+            
             let fixture = {
                 name: message.name,
                 description: message.name,
